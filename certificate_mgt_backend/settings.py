@@ -27,6 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "cms-backend-production-d1e6.up.railway.app",
 ]
 
 # Application definition
