@@ -22,12 +22,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-ajo=ac=%4yqp^jx+bz!up&*n&27$9=%dz-m#lfgx#mk%4%15!k'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "cms-backend-production-d1e6.up.railway.app",
+    ".up.railway.app",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app",
 ]
 
 # Application definition
