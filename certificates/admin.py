@@ -246,13 +246,16 @@ class CertificateApplicationAdmin(admin.ModelAdmin):
         changed_fields = form.changed_data
 
         if 'compliance_approved' in changed_fields and obj.compliance_approved:
-            obj.send_notification('Compliance Director')
+            #obj.send_notification('Compliance Director')
+            pass
 
         if 'ed_approved' in changed_fields and obj.ed_approved:
-            obj.send_notification('Executive Director')
+            #obj.send_notification('Executive Director')
+            pass
 
         if 'ceo_approved' in changed_fields and obj.ceo_approved:
-            obj.send_notification('CEO')
+            #obj.send_notification('CEO')
+            pass
 
         # Update status if all approvals are complete
         if obj.compliance_approved and obj.ed_approved and obj.ceo_approved:
